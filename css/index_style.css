@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+.navv
+{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(200, 192, 192,0.5);
+    z-index: 100;
+    padding: 15px;
+}
+.navv a ,.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link
+{
+    font-weight: 500;   
+    color: black;
+}
+.navv a:hover
+{
+    color: #f7f7f7 !important;
+}
+
+#main
+{
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: cover;
+    height: 100vh;
+}
+#main::before
+{
+    
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    background: #000000;
+    opacity: 0.6;
+    
+}
+.coverCaption
+{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding-top: 18%;
+
+}
+.covertext h1
+{
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.covertext .h1::after
+{
+    content: " |";
+    animation: covertextAnimation 7s infinite alternate ease-in-out;
+    color: white;
+    font-weight: lighter;
+    font-size: 60px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+@keyframes covertextAnimation
+{
+    0%{ content: " |";}
+    1.7%{ content: " I Am L |";}
+    3.3%{ content: " I Am La |";}
+    4.9%{ content: " I Am Lar |";}
+    5.5%{ content: " I Am Larr |";}
+    7.1%{ content: " I Am Larry |";}
+    8.7%{ content: " I Am Larry D |";}
+    10.3%{ content: " I Am Larry Da |";}
+    11.9%{ content: " I Am Larry Dan|"; }
+    13.5%{ content: "I Am Larry Dani |";}
+    14.1%{ content: "I Am Larry Danie |";}
+    15.7%{ content: "I Am Larry Daniel |";}
+   17.3%{ content: "I Am Larry Daniels |";}
+    18.9%{ content: "I Am Larry Daniel |";}
+    20.5%{ content: "I Am Larry Danie |";}
+   22.1%{ content: "I Am Larry Dani |";}
+   23.7%{ content: "I Am Larry Dan |";}
+    25.3%{ content: "I Am Larry Da |";}
+    26.9%{ content: "I Am Larry D |";}
+    24.8%{ content: "I Am Larry |";}
+   28.5%{ content: "I Am Larr |";}
+   30.1%{ content: "I Am Lar |";}
+   31.7%{ content: "I Am La |";}
+    33.3%{ content: "I Am L |";}
+    34.9%{ content: "I Am  |";}
+    36.5%{ content: "I Am D |";}
+    38.1%{ content: "I Am De |";}
+    39.7%{ content: "I Am Dev |";}
+    41.3%{ content: "I Am Deve |";}
+    42.9%{ content: "I Am Devel |";}
+    44.5%{ content: "I Am Develo |";}
+    46.1%{ content: "I Am Develop |";}
+    47.7%{ content: "I Am Develope |";}
+    49.3%{ content: "I Am Developer |";}
+    50.9%{ content: "I Am Develope |";}
+    52.5%{ content: "I Am Develop |";}
+    54.1%{ content: "I Am Develo |";}
+    55.7%{ content: "I Am Devel |";}
+    57.3%{ content: "I Am Deve |";}
+    58.9%{ content: "I Am Dev |";}
+    60.5%{ content: "I Am De |";}
+    62.1%{ content: "I Am D |";}
+    63.7%{ content: "I Am |";}
+    65.3%{ content: "I Am D |";}
+    66.9%{ content: "I Am De |";}
+    68.5%{ content: "I Am Des |";}
+    70.1%{ content: "I Am Desi |";}
+    71.7%{ content: "I Am Desig |";}
+    73.3%{ content: "I Am Design |";}
+    74.9%{ content: "I Am Designe |";}
+    76.5%{ content: "I Am Designer |";}
+    78.1%{ content: "I Am Designe |";}
+    79.7%{ content: "I Am Design |";}
+    81.3%{ content: "I Am Desig |";}
+    82.7%{ content: "I Am Desi |";}
+    84.5%{ content: "I Am Des |";}
+    86.1%{ content: "I Am De |";}
+    87.7%{ content: "I Am D |";}
+    89.3%{ content: "I Am  |";}
+
+ 
+}
+
+#main .icon
+{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#main .socialIcons
+{
+    position: relative;
+    top: 100%;
+}
+
+#about .container .text
+{
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+#about .container h3
+{
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+#about .container p
+{
+    padding-top: 20px;
+    color: #748182;
+    line-height: 1.6;
+    font-size: 15px;
+}
+#about
+{
+    padding:100px 200px
+}
+#about .skills .cap
+{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    padding-bottom: 3px;
+}
+#about .skills .cap p
+{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+#about .img
+{
+    width: 100%;
+    height: 100%;
+    padding: 0 0 0 30px;
+    display: flex;
+
+}
+
+#about .img ::after
+{
+    content: '';
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+#about .progress
+{
+    margin-top: 30px;
+}
+#about .skills .btn1
+{
+    color: white;
+}
+#about .skills .btn1:hover
+{
+    border: 1px solid black !important;
+    background-color: white !important;
+    color: black;
+}
+#about .skills .btn2
+{
+    border: 1px solid black;
+
+}
+#about .skills .btn2:hover
+{
+    background-color: #000000 !important;
+    color: white;
+}
+#services
+{
+    background-color: #f7f7f7;
+}
+#services .head ,#works .head ,#clients .head,#blog .head ,#contact .head
+{
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 80px;
+}
+#services .head h3 ,#works .head h3 ,#clients .head h3 ,#blog .head h3,#contact .head h3
+{
+    font-weight: 900;
+    font-size: 40px;
+    position: relative;
+    display: inline-block;
+    z-index: 400000000;
+}
+#services .head h3::after ,#works .head h3::after ,#clients .head h3::after ,#blog .head h3::after ,#contact .head h3::after
+{
+    content: '';
+    width: 100%;
+    height: 30px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+#services .service_box
+{
+    text-align: center;
+    background-color: white;
+    padding: 50px 20px;
+    margin-bottom: 30px;
+    box-shadow: 0px 10px 30px -8px rgb(0 0 0 / 10%);
+    border-radius: 8px;
+
+}
+
+#services .service_box .iconn
+{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #f7f7f7;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left:50%;
+    transform: translate(-50%);
+    margin-bottom: 20px;
+}
+#services .service_box:hover .iconn
+{
+    background-color:black;
+    color: white;
+}
+
+
+#services .service_box h6
+{
+    margin-bottom: 15px;
+    font-weight: 800;
+    font-size: 18px;
+}
+#services .service_box p
+{
+    word-spacing: 2px;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: auto;
+    font-size: 15px;
+    color: #748182;
+    max-width: 9000;
+}
+#works .nav-pills .nav-link.active, .nav-pills .show>.nav-link 
+{
+    background-color: transparent;
+    color: black;
+    font-weight: 750;
+}
+#works .nav ,#works .nav-link
+{
+    color: black;
+    font-weight: 750;
+
+}
+#works .nav-pills .nav-link.active
+{
+
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    border-bottom: 3px solid black;
+    border-radius: 0%;
+}
+#works .items
+{
+    margin-bottom: 25px;
+}
+#works .items .item-caption
+{
+    background: rgba(255, 255, 255, 0.95);
+    opacity: 0;
+    transition: all 0.5s;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+}
+#works .items .item-caption h6
+{
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+#works .item-caption .icons .icon1
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color:black;
+    color: white;
+    display: flex;
+    position: relative;
+    justify-content:center ;
+    align-items: center;
+    margin-right: 5px;
+}
+#works .item-caption .icons .icon1:hover
+{
+    background-color:white;
+    color: black;
+    border: 1px solid black
+
+}
+#works .items:hover .item-caption
+{
+    opacity: 1;
+}
+#clients
+{
+    background-color: #f7f7f7;
+    padding-bottom: 100px;
+}
+#clients h6
+{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 30px 0 5px;
+}
+#clients p
+{
+    padding-top: 80px;
+    word-spacing: 2px;
+    line-height: 1.6;
+    margin: 0;
+    font-size: 20px;
+    color: #748182;
+}
+#clients .client-span
+{
+    font-weight: 600;
+    color: #888;
+
+}
+#clients .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span
+{
+    background-color: #869791;
+}
+#clients .carousel-dark .carousel-indicators [data-bs-target]
+{
+    margin-top: 30px;
+    background-color: #D6D6D6;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+#numbers
+{
+    padding: 100px 0;
+}
+#numbers .item
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#numbers h3
+{
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+#numbers p
+{
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-size: 15px;
+    color: #748182;
+}
+#blog
+{
+    background-color: #f7f7f7;
+    padding-bottom: 30px;
+}
+#blog .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span
+{
+    background-color: #869791;
+}
+#blog .carousel-dark .carousel-indicators [data-bs-target]
+{
+    margin-top: 30px;
+    background-color: #D6D6D6;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+#blog .card-body
+{
+    text-align: start;
+}
+#blog .card-body h6 a
+{
+    color: #888888 !important;
+    text-decoration: none;
+}
+#blog .card-body h4
+{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+#blog .card-body span a
+{
+    color: #343434;
+}
+#blog .img 
+{
+   
+    overflow: hidden;
+}
+#blog .img img
+{
+    width: 100%;
+    overflow: hidden;
+}
+#blog .img img:hover
+{
+    transform:scale(1.2,1.2);
+    transition: 1s;  
+}
+#contact
+{
+    margin-bottom: 100px;
+}
+
+#Contact .item
+{
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+}
+#Contact .item:hover .icon
+{
+    background-color: black;
+    color:#f4f4f4;
+}
+#contact .icon
+{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #f4f4f4;
+    font-size: 30px;
+    left:50%;
+    transform: translate(-50%);
+    margin-bottom: 20px;
+    font-size: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    line-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: black;
+}
+#contact h6
+{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+#contact p
+{
+    line-height: 2;
+    margin: 0;
+    font-size: 18px;
+    color: #748182;
+}
+#contact #input 
+{
+    margin-top: 60px;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background: #f4f4f4;
+}
+#contact textarea
+{
+    margin-top: 30px;
+    width: 100%;
+    height: 160px;
+    max-height: 160px;
+    max-width: 100%;
+    background-color: #f4f4f4;
+    border: 0;
+    border-radius: 5px;
+}
+
+#contact .btn3
+{
+    width: 10%;
+    color: white;
+}
+#contact .btn3:hover
+{
+    border: 1px solid black !important;
+    background-color: white !important;
+    color: black;
+}
+footer
+{
+    background: #1c1c1c;
+    padding: 30px;
+    margin-top: 50px;
+}
+footer p
+{
+    font-size: 13px;
+    word-spacing: 2px;
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+}
